@@ -1,0 +1,269 @@
+.main-home {
+  /* background-color: brown; */
+  height: 100%;
+  width: 100%;
+  padding-top: 200px;
+}
+.fade-box {
+  background: linear-gradient(to right, #2558e6, #ffffff);
+  border-radius: 2rem;
+  height: 50vh;
+  margin: 0px auto;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  align-content: center;
+}
+.fade-box h1 {
+  color: #ffffff;
+  padding-top: 20%;
+  padding-left: 5%;
+  text-align: start;
+  font-family: "Merriweather", serif;
+}
+
+.fade-box img {
+  width: 400px;
+}
+
+.box-btn-explorar {
+  height: min-content;
+  /* background-color: aqua; */
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+.box-btn-explorar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.explorar {
+  padding: 15px;
+  width: 100px;
+  border: none;
+  background-color: #2558e6;
+  border-radius: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*CARDS*/
+.home-cards {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(#ffffff 80%, #2558e6);
+  border: #2558e6 1px solid;
+  border-radius: 1.5rem;
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.card h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-family: "Roboto Slab", serif;
+}
+.card h1 {
+  font-family: "Merriweather", serif;
+}
+
+.card h2 {
+  font-family: "Roboto Slab", serif;
+}
+
+.home-icon {
+  font-size: 2.1rem;
+  color: #2558e6;
+  display: flex;
+}
+
+/* QUIENES SOMOS */
+.quienes-somos {
+  height: 100vh;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  margin: auto;
+}
+
+.quienes-somos h1 {
+  text-align: left;
+  font-family: "Merriweather", serif;
+}
+.quienes-somos p {
+  text-align: left;
+  font-family: "Roboto Slab", serif;
+}
+
+.home-info {
+  /* background-color: cadetblue; */
+  height: 100vh;
+  margin: 0px auto;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-content: center;
+}
+
+.home-info span {
+  padding-top: 20%;
+  padding-left: 5%;
+}
+
+.home-info h1 {
+  /* background-color: aqua; */
+  text-align: start;
+  font-family: "Merriweather", serif;
+}
+.home-info p {
+  display: flex;
+  text-align: start;
+  font-family: "Roboto Slab", serif;
+}
+.home-info img {
+  width: 600px;
+}
+
+/*
+-----------------------------------------------------------
+RESPONSIVE
+-----------------------------------------------------------
+*/
+
+@media only screen and (max-width: 768px) {
+  .main-home {
+    /* padding-top: 150px; */
+    min-width: 100%;
+  }
+  /* FADE BOX */
+  .fade-box {
+    max-width: 100%;
+    height: fit-content;
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+    align-items: center;
+  }
+
+  .fade-box h1 {
+    /* font-size: 1rem; */
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .fade-box img {
+    width: 250px;
+  }
+
+  /* BOTON EXPLORAR */
+  .box-btn-explorar {
+    width: 100%;
+  }
+
+  /* CARDS */
+
+  .home-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    margin: auto;
+  }
+
+  .card {
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  /* HOME INFO */
+  .home-info {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .home-info span {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .home-info span h1 {
+    text-align: center;
+  }
+
+  .home-info span p {
+    text-align: center;
+  }
+
+  .home-info img {
+    width: 350px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-home {
+    padding-top: 100px;
+  }
+  .fade-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    border-radius: 1rem;
+    /* background: linear-gradient(#2558e6 80%, #ffffff); */
+    background-color: chocolate;
+  }
+  .fade-box h1 {
+    text-align: center;
+  }
+  .fade-box img {
+    margin: auto;
+    width: 300px;
+  }
+  .box-btn-explorar {
+    width: 400px;
+  }
+  .box-btn-explorar button {
+    margin: auto;
+  }
+  .home-cards {
+    width: 400px;
+  }
+  .home-info {
+    width: 400px;
+  }
+
+  .quienes-somos {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+  }
+  .quienes-somos h1 {
+    text-align: center;
+  }
+  .quienes-somos p {
+    text-align: center;
+  }
+
+  .quienes-somos img {
+    width: 300px;
+    margin: auto;
+  }
+}
